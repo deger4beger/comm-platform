@@ -17,6 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
+      <span>Hello user: </span>
       {JSON.stringify(data)}
     </div>
   )
