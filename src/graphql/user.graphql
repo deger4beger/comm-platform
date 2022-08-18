@@ -1,3 +1,5 @@
 query getUser {
-	id
+	user {
+	  id
+	}
 }

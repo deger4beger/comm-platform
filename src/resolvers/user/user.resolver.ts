@@ -5,12 +5,12 @@ import { User } from "./user.types"
 import { UserService } from "./user.service"
 
 @Service()
-@Resolver(of => User)
+@Resolver(User)
 export class UserResolver {
 
   constructor(private userService: UserService) {}
 
-  @Query(returns => User)
+  @Query(_returns => User)
 	user(): User {
 	  return this.userService.getOne()
 	}
