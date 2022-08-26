@@ -1,8 +1,8 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-import { Hydrate, QueryClientProvider } from 'react-query'
-import { queryClient } from '../src'
-import Wrapper from '../components/wrapper'
+import "../styles/globals.css"
+import type { AppProps } from "next/app"
+import { Hydrate, QueryClientProvider } from "react-query"
+import { queryClient } from "../src"
+import Wrapper from "../src/components/wrapper"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
