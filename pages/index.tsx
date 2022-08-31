@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <span>For the sake of gods:</span>
+      <span>For the sake of stats:</span>
       {JSON.stringify(data)}
     </div>
   )
