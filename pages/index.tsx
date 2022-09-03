@@ -17,7 +17,7 @@ const Home: NextPage = () => {
 
   return (
     <div>
-      <span>For the sake of stats:</span>
+      <span>Template for fstack app:</span>
       {JSON.stringify(data)}
     </div>
   )
