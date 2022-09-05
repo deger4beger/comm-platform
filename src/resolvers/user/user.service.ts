@@ -7,7 +7,8 @@ export class UserService {
     return {
     	id: "id",
     	email: "email",
-    	password: "mypw"
+    	password: "mypw",
+      phone: "7778877887"
     }
   }
 
