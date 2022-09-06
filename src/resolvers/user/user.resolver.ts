@@ -10,7 +10,7 @@ export class UserResolver {
 
   constructor(private userService: UserService) {}
 
-  @Query(() => User)
+  @Query(_returns => User)
 	user(): User {
 	  return this.userService.getOne()
 	}
