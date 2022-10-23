@@ -12,7 +12,7 @@ const Wrapper = ({ children }: {
         <Header />
         <div className="min-h-screen w-8/12 m-auto">
           <div className="pt-2 pb-6">
-          	{ routes() }
+          	{ Routes() }
           </div>
           { children }
         </div>
@@ -31,7 +31,7 @@ const Header = () => {
 	)
 }
 
-const routes = () => {
+const Routes = () => {
 
 	const { route: routePath } = useRouter()
 
