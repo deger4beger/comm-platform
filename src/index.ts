@@ -6,12 +6,15 @@ import { QueryClient } from "react-query";
 const gqcClient = new GraphQLClient("http://localhost:3000/api/graphql");
 export const { getUser } = getSdk(gqcClient);
 
-export const queryClient = new QueryClient({
-	defaultOptions: {
-		queries: {
-			refetchOnMount: false,
-			refetchOnWindowFocus: false,
-			refetchOnReconnect: false
-		}
-	}
-})
+export const queryClient = new QueryClient()
+
+// ## SSR options
+// {
+// 	defaultOptions: {
+// 		queries: {
+// 			refetchOnMount: false,
+// 			refetchOnWindowFocus: false,
+// 			refetchOnReconnect: false
+// 		}
+// 	}
+// }
